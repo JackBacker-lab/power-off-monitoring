@@ -245,7 +245,7 @@ client = TelegramClient("me", api_id, api_hash)
     
 prev_schedules: list[Schedule] = []
 
-@client.on(events.NewMessage(chats="https://t.me/SvitloSvitlovodskohoRaionu"))
+@client.on(events.NewMessage(chats="https://t.me/somereff"))
 async def handler(event):
     global prev_schedules
     
@@ -284,5 +284,6 @@ async def handler(event):
 
 client.start()
 client.run_until_disconnected()
+
 
 
