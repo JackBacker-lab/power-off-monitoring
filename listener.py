@@ -93,7 +93,7 @@ def generate_schedule_table(schedule: Schedule, filename="schedule.png"):
     left_margin = 70 * 2
     font_size = 13 * 2
 
-    font_path = "C:/Windows/Fonts/arial.ttf"
+    font_path = "fonts/DejaVuSans.ttf"
     font = ImageFont.truetype(font_path, font_size)
     header_font = ImageFont.truetype(font_path, 20 * 2)
 
@@ -284,3 +284,4 @@ async def handler(event):
 
 client.start()
 client.run_until_disconnected()
+
