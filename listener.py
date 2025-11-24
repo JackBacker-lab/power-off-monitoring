@@ -241,7 +241,7 @@ def remove_markdown_stars(text: str) -> str:
 api_id = 25141343
 api_hash = "73a17ccc41bb711c547be190bb9279b9"
 
-client = TelegramClient("me", api_id, api_hash)
+client = TelegramClient('bot', api_id, api_hash).start(bot_token="8341726798:AAHkK83q6pe9smi4eydU65QG3F-1N8Sna20")
     
 prev_schedules: list[Schedule] = []
 
@@ -284,6 +284,7 @@ async def handler(event):
 
 client.start()
 client.run_until_disconnected()
+
 
 
 
