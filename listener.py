@@ -276,7 +276,7 @@ async def handler(event):
         prev_schedules.append(schedule)
     
     await client.send_file(
-        'https://t.me/+tA95lqSW7h81ZmQy',
+        'https://t.me/test12434534132432',
         file='schedule.png',
         caption=f"{message_html}",
         parse_mode='html'
@@ -284,6 +284,7 @@ async def handler(event):
 
 client.start()
 client.run_until_disconnected()
+
 
 
 
